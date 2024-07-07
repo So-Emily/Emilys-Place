@@ -1,19 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Website</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-</head>
-<body>
-    <header>
-        <h1 class="cloud">Emily's Page</h1>
-    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Emily</title>
+
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <!-- For Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Person Style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body> 
+    <header>
+        <div class="image-text-container">
+            <img src="assets/images/bio-img.png" class="img-fluid" alt="Header image - bioshock rapture city line with Emily's Place on top">
+
+            <!-- Corner contacts - big screen -->
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/emily-soriano-171a4313a/" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/So-Emily" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>
+                <a href="https://steamcommunity.com/id/Spooki_Em/" target="_blank" class="contact-icon"><i class="fab fa-steam"></i></a>
+                <a href="https://www.instagram.com/spooki_em/" target="_blank" class="contact-icon"><i class="fab fa-instagram"></i></a>
+                <!-- <a href="mailto:esoriano110@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a> -->
+            </div>
+
+            <!-- Image Text Title -->
+            <div class="centered-text indie-flower-header text-light">Emily's Place</div>
+        </div> 
+
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid justify-content-center">
+                <a class="navbar-brand" href="">
+                    <img src="assets/images/boo-hi.png" alt="Logo" width="40" height="40" class="head-name d-inline-block align-text-center">
+                </a>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link indie-flower-nav text-decoration-underline link-offset-3" href="">Home</a>
+                    </li>
+                    <!-- Make projects drop down? -->
+                    <li class="nav-item">
+                        <a class="nav-link indie-flower-nav text-decoration-underline link-offset-3" href="#projects">Projects</a>
+                    </li> 
+                    <!-- <li class="nav-item">
+                        <a class="nav-link indie-flower-nav text-decoration-underline link-offset-3" href="#contact-em">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Contact icons - small screen -->
+        <div class="contact-icons-small justify-content-center">
+            <a href="https://www.linkedin.com/in/emily-soriano-171a4313a/" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/So-Emily" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>
+            <a href="https://steamcommunity.com/id/Spooki_Em/" target="_blank" class="contact-icon"><i class="fab fa-steam"></i></a>
+            <a href="https://www.instagram.com/spooki_em/" target="_blank" class="contact-icon"><i class="fab fa-instagram"></i></a>
+            <!-- <a href="mailto:esoriano110@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a> -->
+        </div>
+    </header>
+    <!-- About Me Starts w/ Img -->
+    <section class="container-fluid" id="about-em-container">
+        <div class="row justify-content-evenly">
+            <div class="col-12 col-sm-2 offset-1 about-img-container">
+                <img src="assets/images/emily.jpg" class="img-fluid about-img" alt="Emily's profile picture">
+            </div>
+            <div class="col-12 col-md-6 about-text-container text-light">
+                <h2 class="indie-flower-header about-title link-offset-1">About Em</h2>
+                <p class="source-code-pro-text about-body">
+                    Hello there! My name is Emily Soriano.<br> 
+                    
+                    I am born and raised in Seattle, but I live in California at the moment.<br>
+
+                    I am studying coding and web development with UC Berkeley Extension's Coding Bootcamp.<br>
+
+                    My passions are video games, roller skating and my dog, Cleo.
+                </p>
+            </div>
+        </div>
 </body>
-</html>

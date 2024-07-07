@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: #755b84;
+}
+
+/* Navbar Font*/
+.indie-flower-nav {
+    font-family: "Indie Flower", cursive;
+    font-optical-sizing: auto;
+    color: #a738cb;
+    font-size: 1.6rem;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-shadow: 1px 1px 1px rgb(7, 7, 7);
+    transition: 0.4s;
+}
+
+.indie-flower-nav:hover {
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+}
+
+/* Header Image CSS */
+.image-text-container {
+    position: relative;
+}
+
+.contact-icons {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    font-size: 19px; /* Adjust icon size as needed */
+}
+
+.contact-icons a {
+    color: #fbfcfc; /* Icon color */
+    margin: 0 10px; /* Spacing between icons */
+}
+
+.contact-icons a:hover {
+    color: #a261ed; /* Hover color */
+    transition: 0.4s;
+}
+
+.contact-icons-small {
+    display: none;
+}
+
+/* Header Img Text */
+.centered-text {
+    font-family: "Indie Flower", cursive;
+    position: absolute;
+    top: 47%; /* Center vertically */
+    left: 51%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    color: white; /* Example text color */
+    font-size: 8vw; /* Example font size */
+    text-shadow: 2px 2px 2px black; /* Example text shadow */
+}
+
+.align-right {
+    text-align: right;
+    position: absolute;
+}
+
+/* Body Begins */
+/* About Me Full Container */
+#about-em-container {
+    padding-top: 60px;
+}
+
+/* about me img */
+.about-img {
+    border-radius: 50%;
+}
+
+/* About Me Text */
+.about-text-container {
+    padding-bottom: 20px;
+}
+
+.about-title{
+    font-family: "Indie Flower", cursive;
+    font-size: 2.5rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 770px) {
+    .about-img {
+        display: none;
+    }
+
+    /* Make top contact icons invidible when the screen gets smaller */
+    .contact-icons {
+        display: none;
+    }
+
+    /* Show small contact icons when the screen gets smaller */
+    .contact-icons-small {
+        display: block;
+        position: absolute; /* Ensure this is positioned relative to a positioned ancestor */
+        padding-top: 10px; /* Adjust as needed */
+        margin-bottom: 10px;
+        left: 50%; /* Center relative to the container */
+        transform: translateX(-50%); /* Shift it back to truly center it */
+        font-size: 30px; /* Adjust icon size as needed */
+        width: 100%; /* Take full width to center content */
+        text-align: center; /* Center the icons */
+    }
+
+    .contact-icons-small a {
+        color: #fbfcfc; /* Icon color */
+        margin: 0 10px; /* Spacing between icons */
+    }
+    
+    .contact-icons-small a:hover {
+        color: #a261ed; /* Hover color */
+        transition: 0.4s;
+    }
+}
+
+
