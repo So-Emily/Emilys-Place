@@ -13,13 +13,25 @@ header {
     padding-top: 50px;
 }
 
+/* Back to the top button CSS */
 #myBtn{
     background-color: transparent;
     border: none;
 }
 
 .to-top-btn {
-    max-width: 150px;
+    max-width: 70px;
+}
+
+#myBtn:active {
+    /* Your styles for the button when it is clicked */
+    border: none;
+    /* Add more styles as needed */
+}
+
+.header-img {
+    width: 100%;
+    max-height: 290px;
 }
 
 /* Navbar Font*/
@@ -48,11 +60,11 @@ header {
 .centered-text {
     font-family: "Indie Flower", cursive;
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 41%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust to perfectly center */
     color: white; /* Example text color */
-    font-size: 8.8vw; /* Example font size */
+    font-size: 8.4vw; /* Example font size */
     text-shadow: 2.2px 2.2px 2.2px black; /* Example text shadow */
 }
 
@@ -82,7 +94,7 @@ header {
 /* Body Begins */
 /* About Me Full Container */
 #about-em-container {
-    padding-top: 35px;
+    padding-top: 20px;
 }
 
 /* about me img */
