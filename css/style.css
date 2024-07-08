@@ -9,11 +9,24 @@ body {
     background-color: #755b84;
 }
 
+header {
+    padding-top: 50px;
+}
+
+#myBtn{
+    background-color: transparent;
+    border: none;
+}
+
+.to-top-btn {
+    max-width: 150px;
+}
+
 /* Navbar Font*/
 .indie-flower-nav {
     font-family: "Indie Flower", cursive;
     font-optical-sizing: auto;
-    color: #a738cb;
+    color: #f3a2f9;
     font-size: 1.6rem;
     padding-bottom: 4px;
     padding-top: 4px;
@@ -31,58 +44,61 @@ body {
     position: relative;
 }
 
-.contact-icons {
-    position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-    font-size: 30px; /* Adjust icon size as needed */
-}
-
-.contact-icons a {
-    color: #fbfcfc; /* Icon color */
-    margin: 0 10px; /* Spacing between icons */
-}
-
-.contact-icons a:hover {
-    color: #a261ed; /* Hover color */
-    transition: 0.4s;
-}
-
-.contact-icons-small {
-    display: none;
-}
-
 /* Header Img Text */
 .centered-text {
     font-family: "Indie Flower", cursive;
     position: absolute;
-    top: 47%; /* Center vertically */
-    left: 51%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust to perfectly center */
     color: white; /* Example text color */
-    font-size: 8vw; /* Example font size */
-    text-shadow: 2px 2px 2px black; /* Example text shadow */
+    font-size: 8.8vw; /* Example font size */
+    text-shadow: 2.2px 2.2px 2.2px black; /* Example text shadow */
 }
 
-.align-right {
-    text-align: right;
-    position: absolute;
+.contact-icons {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;        
+    font-size: 30px; 
+    /* padding-top: 9px;
+    margin-top: 6px; */
+    background-color: #755b84;
+
+}
+
+.contact-icons a {
+    color: #fbfcfc; /* Icon color */
+    margin: 0 20px; /* Spacing between icons */
+}
+
+.contact-icons a:hover {
+    color: #f3a2f9; /* Hover color */
+    transition: 0.4s;
 }
 
 /* Body Begins */
 /* About Me Full Container */
 #about-em-container {
-    padding-top: 60px;
+    padding-top: 35px;
 }
 
 /* about me img */
 .about-img {
     border-radius: 50%;
+    min-width: 170px;
+    
 }
 
 /* About Me Text */
 .about-text-container {
     padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 8%;
+    text-shadow: 1px 1px 1px rgb(7, 7, 7);
+    max-height: 55%;
 }
 
 .about-title{
@@ -90,42 +106,112 @@ body {
     font-size: 2.5rem;
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    padding-bottom: 10px;
+}
+
+/* Projects Section */
+#projects {
+    padding-bottom: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Project main title */
+.projects-header {
+    font-family: "Indie Flower", cursive;
+    display: flex;
+    font-size: 2.6rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+/* Individual project titles */
+.project-title {
+    font-family: "Indie Flower", cursive;
+    font-size: 2rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Line underneath the project titles */
+.project-title-link {
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+}
+
+.project-title-link:hover {
+    color: #f3a2f9fa;
+    text-shadow: 0px 0px 0px rgb(106, 15, 111);
+    transition: 0.4s;
+}
+
+/* Project Image */
+.project-img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+/* Project Description */
+.project-body {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 1px rgb(7, 7, 7);
+}
+
+.project-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Project Button */
+.project-button {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    font-family: "Indie Flower", cursive;
+    font-size: 1.2rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    border-color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 0.4s;
+}
+
+.project-button:hover {
+    background-color: #f3a2f9;
+    color: #090909;
+    border-color: #090909;
+    text-shadow: 0px 0px 0px rgb(106, 15, 111);
+    transition: 0.4s;
+}
+
+.project-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
-@media screen and (max-width: 770px) {
+/* Media Queries */
+@media screen and (max-width: 768px) {
     .about-img {
         display: none;
     }
 
-    /* Make top contact icons invidible when the screen gets smaller */
-    .contact-icons {
-        display: none;
+    .about-text-container {
+        text-align: center;
     }
 
-    /* Show small contact icons when the screen gets smaller */
-    .contact-icons-small {
-        display: block;
-        position: absolute; /* Ensure this is positioned relative to a positioned ancestor */
-        padding-top: 10px; /* Adjust as needed */
-        margin-bottom: 10px;
-        left: 50%; /* Center relative to the container */
-        transform: translateX(-50%); /* Shift it back to truly center it */
-        font-size: 30px; /* Adjust icon size as needed */
-        width: 100%; /* Take full width to center content */
-        text-align: center; /* Center the icons */
-    }
-
-    .contact-icons-small a {
-        color: #fbfcfc; /* Icon color */
-        margin: 0 10px; /* Spacing between icons */
-    }
-    
-    .contact-icons-small a:hover {
-        color: #a261ed; /* Hover color */
-        transition: 0.4s;
-    }
 }
 
 
