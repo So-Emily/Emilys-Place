@@ -23,15 +23,47 @@ header {
     max-width: 70px;
 }
 
-#myBtn:active {
-    /* Your styles for the button when it is clicked */
-    border: none;
-    /* Add more styles as needed */
+.contact-icons {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;        
+    font-size: 30px; 
+    padding-top: 2.5px;
+    background-color: #755b84;
+}
+
+.contact-icons a {
+    color: #fbfcfc; /* Icon color */
+    margin: 0 20px; /* Spacing between icons */
+}
+
+.contact-icons a:hover {
+    color: #f3a2f9; /* Hover color */
+    transition: 0.4s;
 }
 
 .header-img {
     width: 100%;
-    max-height: 290px;
+    max-height: 280px;
+}
+
+/* Header Image CSS */
+.image-text-container {
+    position: relative;
+}
+
+/* Header Img Text */
+.centered-text {
+    font-family: "Indie Flower", cursive;
+    position: absolute;
+    top: 38%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    color: white; /* Example text color */
+    font-size: 8.6vw; /* Example font size */
+    text-shadow: 2.2px 2.2px 2.2px black; /* Example text shadow */
 }
 
 /* Navbar Font*/
@@ -51,50 +83,10 @@ header {
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
 }
 
-/* Header Image CSS */
-.image-text-container {
-    position: relative;
-}
-
-/* Header Img Text */
-.centered-text {
-    font-family: "Indie Flower", cursive;
-    position: absolute;
-    top: 41%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust to perfectly center */
-    color: white; /* Example text color */
-    font-size: 8.4vw; /* Example font size */
-    text-shadow: 2.2px 2.2px 2.2px black; /* Example text shadow */
-}
-
-.contact-icons {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;        
-    font-size: 30px; 
-    /* padding-top: 9px;
-    margin-top: 6px; */
-    background-color: #755b84;
-
-}
-
-.contact-icons a {
-    color: #fbfcfc; /* Icon color */
-    margin: 0 20px; /* Spacing between icons */
-}
-
-.contact-icons a:hover {
-    color: #f3a2f9; /* Hover color */
-    transition: 0.4s;
-}
-
 /* Body Begins */
 /* About Me Full Container */
 #about-em-container {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 /* about me img */
@@ -107,7 +99,7 @@ header {
 /* About Me Text */
 .about-text-container {
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 8%;
     text-shadow: 1px 1px 1px rgb(7, 7, 7);
     max-height: 55%;
