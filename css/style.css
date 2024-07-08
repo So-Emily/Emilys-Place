@@ -133,13 +133,17 @@ header {
     padding-bottom: 2%;
 }
 
+.project-header{
+    padding-top: 2%;
+
+}
 /* Individual project titles */
 .project-title {
     font-family: "Indie Flower", cursive;
     font-size: 2rem;
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: center;
 }
 
