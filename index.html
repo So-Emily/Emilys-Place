@@ -18,8 +18,10 @@
     <!-- maybe use? -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     
-    <!-- For Icons -->
+    <!-- For Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
     <!-- Person Style sheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -40,33 +42,35 @@
                     <img src="assets/images/boo-hi.png" alt="Logo" width="40" height="40" class="head-name d-inline-block align-text-center">
                 </a>
                 <ul class="nav justify-content-center">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link indie-flower-nav text-decoration-underline link-offset-3" href="">Home</a>
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link indie-flower-nav text-decoration-underline link-offset-3" href="#about-em-container">About</a>
-                    </li> -->
-                    <!-- Make projects drop down? -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link indie-flower-nav text-decoration-underline link-offset-3" href="#contact-em">Contact</a>
-                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link indie-flower-nav text-decoration-underline link-offset-3" href="#pre-projects">Projects</a>
+                        <a class="nav-link indie-flower-nav  link-offset-3" href="#skills">Tech Stack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link indie-flower-nav  link-offset-3" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link indie-flower-nav link-offset-3" href="#contact-em">Contact Em</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <!-- Center Contacts-->
+        <!-- Contacts Following Header -->
         <div class="contact-icons justify-content-center">
-            <a href="https://www.linkedin.com/in/emily-soriano-171a4313a/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            
             <a href="https://steamcommunity.com/id/Spooki_Em/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Steam"><i class="fab fa-steam"></i></a>
-            <a href="https://discord.gg/6wE6Cgffp2" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Boo Land Discord Server"><i class="fab fa-discord"></i></a>
-            <a href="https://github.com/So-Emily" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/Spooki_Em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i></a>
+            
             <a href="https://www.twitch.tv/spooki_em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitch"><i class="fab fa-twitch"></i></a>
+            
+            <a href="https://www.linkedin.com/in/emily-soriano-171a4313a/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            
+            <a href="https://github.com/So-Emily" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub"><i class="fab fa-github"></i></a>
+            
             <a href="https://www.instagram.com/spooki_em/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <!-- <a href="mailto:esoriano110@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a> -->
+            
+            <a href="https://discord.gg/6wE6Cgffp2" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Boo Land Discord Server"><i class="fab fa-discord"></i></a>
+            
+            <a href="https://twitter.com/Spooki_Em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
     </header>
 
@@ -88,16 +92,123 @@
                     
                     I am born and raised in Seattle, but I live in California at the moment.<br>
 
-                    I am studying coding and web development with UC Berkeley Extension's Coding Bootcamp.<br>
+                    Currently, I am studying coding and web development with UC Berkeley Extension's Coding Bootcamp.<br>
 
-                    My passions are video games, roller skating and my dog, Cleo.
+                    I want to become a full stack developer and work on projects that I am passionate about.<br>
+
+                    Beside my passions for video games, roller skating and my dog, Cleo.
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- Line inbetween sections -->
+    <div class="about-break-line"></div>
+
+    <!-- Skills - Tech Stack Section -->
+    <section id="skills">
+        <class="container-fluid">
+            <!-- Skills Title -->
+            <h2 class="skills-header text-light link-offset-1">Tech Stack</h2>
+            <!-- Skills Tabs for Frontend Backend and Others -->
+            <div class="skill-nav-contiainers, max-width:50%;">
+                <ul class="nav nav-pills mb-3 justify-content-center" id="tech-stack" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-frontend-tab" data-bs-toggle="pill" data-bs-target="#pills-frontend" type="button" role="tab" aria-controls="pills-frontend" aria-selected="true">Frontend</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-backend-tab" data-bs-toggle="pill" data-bs-target="#pills-backend" type="button" role="tab" aria-controls="pills-backend" aria-selected="false">Backend</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-others-tab" data-bs-toggle="pill" data-bs-target="#pills-others" type="button" role="tab" aria-controls="pills-others" aria-selected="false">Others</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Frontend -->
+                    <div class="tab-pane fade show active" id="pills-frontend" role="tabpanel" aria-labelledby="pills-frontend-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" class="img-fluid skill-img" alt="HTML">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" class="img-fluid skill-img" alt="CSS">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div><div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="img-fluid skill-img" alt="JavaScript">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" class="img-fluid skill-img" alt="jQuery">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" class="img-fluid skill-img" alt="React">
+                                <p class="source-code-pro-text skill-text"></p>    
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" class="img-fluid skill-img" alt="Bootstrap">
+                                <p class="source-code-pro-text skill-text">Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Backend -->
+                    <div class="tab-pane fade" id="pills-backend" role="tabpanel" aria-labelledby="pills-backend-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" class="img-fluid skill-img" alt="Node.js">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodemon/nodemon-original.svg" class="img-fluid skill-img" alt="Nodemon">
+                                <p class="source-code-pro-text skill-text">Nodemon</p>
+                            </div>
+                        </div>    
+                    </div>  
+                    <!-- Others -->
+                    <div class="tab-pane fade" id="pills-others" role="tabpanel" aria-labelledby="pills-others-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="img-fluid skill-img" alt="Git">
+                                <p class="source-code-pro-text skill-text">Git</p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" class="img-fluid skill-img" alt="GitHub">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original-wordmark.svg" class="img-fluid skill-img" alt="GitLab">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materializecss/materializecss-original.svg" class="img-fluid skill-img" alt="Materialize CSS">
+                                <p class="source-code-pro-text skill-text">Materialize CSS</p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg" class="img-fluid skill-img" alt="Slack">
+                                <p class="source-code-pro-text skill-text">Slack</p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="img-fluid skill-img" alt="vscode">
+                                <p class="source-code-pro-text skill-text">VS Code</p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg " class="img-fluid skill-img" alt="Trello">
+                                <p class="source-code-pro-text skill-text">Trello</p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="img-fluid skill-img" alt="photoshop">
+                                <p class="source-code-pro-text skill-text">Photoshop</p>
+                            </div>
+                        </div>
+                        
+                    </div>    
+                </div>
+            </div>
+        </class>    
+    </section>
+
     <!-- Projects Section -->
-    <section id="pre-projects"></section>
     <section class="container-fluid" id="projects">
         <h2 class="projects-header text-light link-offset-1">Projects</h2>
         <div class="row justify-content-evenly align-content-center">
@@ -156,6 +267,31 @@
                     <a href="https://github.com/So-Emily/jQuery-Task-Board" target="_blank" class="btn btn-outline-info project-button">View Project GitHub</a>
         </div>
     </section>
+
+    <!-- Line inbetween sections -->
+    <div class="break-line"></div>
+
+    <!-- Contact Section -->
+    <section id="contact-em">
+        <div class="container-fluid">
+            <h2 class="contact-header text-light link-offset-1">Contact Em</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 contact-form-container">
+                    <form action="mailto:esoriano110@gmail.com">
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-light"">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Hello! What is your name?" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-light">Your Contact Info</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="What is the best way to contact you? (e-mail, social media, etc.)" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-light">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Whats up?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-info">Submit</button>
+                    </form>
 
     <!-- JS Script Link -->
     <script src="js/script.js"></script>
