@@ -18,8 +18,10 @@
     <!-- maybe use? -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     
-    <!-- For Icons -->
+    <!-- For Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
     <!-- Person Style sheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -51,21 +53,31 @@
                         <a class="nav-link indie-flower-nav text-decoration-underline link-offset-3" href="#contact-em">Contact</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link indie-flower-nav text-decoration-underline link-offset-3" href="#pre-projects">Projects</a>
+                        <a class="nav-link indie-flower-nav  link-offset-3" href="#skills">Tech Stack</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link indie-flower-nav  link-offset-3" href="#pre-projects">Projects</a>
+                    </li>
+                    
                 </ul>
             </div>
         </nav>
 
         <!-- Center Contacts-->
         <div class="contact-icons justify-content-center">
-            <a href="https://www.linkedin.com/in/emily-soriano-171a4313a/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            
+            
             <a href="https://steamcommunity.com/id/Spooki_Em/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Steam"><i class="fab fa-steam"></i></a>
-            <a href="https://discord.gg/6wE6Cgffp2" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Boo Land Discord Server"><i class="fab fa-discord"></i></a>
-            <a href="https://github.com/So-Emily" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/Spooki_Em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="https://www.twitch.tv/spooki_em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitch"><i class="fab fa-twitch"></i></a>
+            <a href="https://www.linkedin.com/in/emily-soriano-171a4313a/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            
+            <a href="https://github.com/So-Emily" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub"><i class="fab fa-github"></i></a>
+            
             <a href="https://www.instagram.com/spooki_em/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"><i class="fab fa-instagram"></i></a>
+            
+            <a href="https://discord.gg/6wE6Cgffp2" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Boo Land Discord Server"><i class="fab fa-discord"></i></a>
+            <a href="https://twitter.com/Spooki_Em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i></a>
+
             <!-- <a href="mailto:esoriano110@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a> -->
         </div>
     </header>
@@ -88,12 +100,93 @@
                     
                     I am born and raised in Seattle, but I live in California at the moment.<br>
 
-                    I am studying coding and web development with UC Berkeley Extension's Coding Bootcamp.<br>
+                    Currently, I am studying coding and web development with UC Berkeley Extension's Coding Bootcamp.<br>
 
-                    My passions are video games, roller skating and my dog, Cleo.
+                    I want to become a full stack developer and work on projects that I am passionate about.<br>
+
+                    Beside my passions for video games, roller skating and my dog, Cleo.
                 </p>
             </div>
         </div>
+    </section>
+
+
+    <!-- Skills - Tech Stack Section -->
+    <section id="skills">
+        <class="container-fluid">
+            <!-- Skills Title -->
+            <h2 class="skills-header text-light link-offset-1">Tech Stack</h2>
+            <!-- Skills Tabs for Frontend Backend and Others -->
+            <div class="skill-nav-contiainers, max-width:50%;">
+                <ul class="nav nav-pills mb-3 justify-content-center" id="tech-stack" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-frontend-tab" data-bs-toggle="pill" data-bs-target="#pills-frontend" type="button" role="tab" aria-controls="pills-frontend" aria-selected="true">Frontend</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-backend-tab" data-bs-toggle="pill" data-bs-target="#pills-backend" type="button" role="tab" aria-controls="pills-backend" aria-selected="false">Backend</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-others-tab" data-bs-toggle="pill" data-bs-target="#pills-others" type="button" role="tab" aria-controls="pills-others" aria-selected="false">Others</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Frontend -->
+                    <div class="tab-pane fade show active" id="pills-frontend" role="tabpanel" aria-labelledby="pills-frontend-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" class="img-fluid skill-img" alt="HTML">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" class="img-fluid skill-img" alt="CSS">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div><div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="img-fluid skill-img" alt="JavaScript">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" class="img-fluid skill-img" alt="jQuery">
+                                <p class="source-code-pro-text skill-text"></p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" class="img-fluid skill-img" alt="React">
+                                <p class="source-code-pro-text skill-text"></p>    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Backend -->
+                    <div class="tab-pane fade" id="pills-backend" role="tabpanel" aria-labelledby="pills-backend-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="assets/images/skills/node.png" class="img-fluid skill-img" alt="Node">
+                                <p class="source-code-pro-text skill-text">Node</p>
+                            </div>
+                        </div>    
+                    </div>  
+                    <!-- Others -->
+                    <div class="tab-pane fade" id="pills-others" role="tabpanel" aria-labelledby="pills-others-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="assets/images/skills/git.png" class="img-fluid skill-img" alt="Git">
+                                <p class="source-code-pro-text skill-text">Git</p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="assets/images/skills/github.png" class="img-fluid skill-img" alt="GitHub">
+                                <p class="source-code-pro-text skill-text">GitHub</p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="assets/images/skills/api.png" class="img-fluid skill-img" alt="API's">
+                                <p class="source-code-pro-text skill-text">API's<p>
+                            </div>
+                            <div class="col-12 col-md-3 skill-container">
+                                <img src="assets/images/skills/bootstrap.png" class="img-fluid skill-img" alt="Bootstrap">
+                                <p class="source-code-pro-text skill-text">Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </class>    
     </section>
 
     <!-- Projects Section -->
@@ -156,6 +249,8 @@
                     <a href="https://github.com/So-Emily/jQuery-Task-Board" target="_blank" class="btn btn-outline-info project-button">View Project GitHub</a>
         </div>
     </section>
+
+    
 
     <!-- JS Script Link -->
     <script src="js/script.js"></script>
