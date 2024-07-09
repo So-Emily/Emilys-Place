@@ -23,13 +23,14 @@ header {
     max-width: 70px;
 }
 
+/* Contact fixed section */
 .contact-icons {
     display: flex;
     flex-direction: column;    
     position: fixed;
     z-index: 1000;   
     font-size: 30px; 
-    gap: 20px;
+    gap: 30px;
     padding-bottom: 1%
     /* background-color: #755b84; */
 }
@@ -44,6 +45,8 @@ header {
     transition: 0.4s;
 }
 
+
+/* Start of header */
 .header-img {
     width: 100%;
     max-height: 300px;
@@ -83,6 +86,10 @@ header {
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
 }
 
+.navbar-brand {
+    animation : wiggle 2s ease-in-out;
+}
+
 /* Title Styles */
 .projects-header, .skills-header, .contact-header, .header-welcome {
     font-family: "Indie Flower", cursive;
@@ -95,48 +102,99 @@ header {
     padding-bottom: 2%;
 }
 
+/* Creating a text effect - text wiggle or swing */
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
 .header-welcome {
-    padding-top: 4%;
+    padding-top: 3%;
     padding-bottom: 1%;
+    font-size: 4rem;
+    animation: wiggle 2s ease-in-out;
 }
 
 .head-title-text p {
-    justify-content: center;
     text-align: center;
-    padding-top: -12px;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     text-shadow: 1px 1px 1px rgb(7, 7, 7);
 }
 
 /* Body Begins */
-/* About Me Full Container */
-#about-em-container {
-    padding-top: 30px;
+/* Skills Section */
+.skills-header {
+    padding-bottom: 1%;
+    padding-top: 5%;
 }
 
-/* about me img */
-.about-img {
-    border-radius: 50%;
-    min-width: 170px;
-    
-}
-
-/* About Me Text */
-.about-text-container {
-    padding-bottom: 20px;
-    padding-top: 10px;
-    padding-left: 6.2%;
-    text-shadow: 1px 1px 1px rgb(7, 7, 7);
-    max-height: 55%;
-}
-
-.about-title{
+.nav-link{
     font-family: "Indie Flower", cursive;
-    font-size: 2.5rem;
-    color: #f7f7f7;
-    text-shadow: 2px 2px 2px rgb(7, 7, 7);
-    /* text-decoration: underline; */
-    padding-bottom: 10px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: #f3a2f9;
+    transition: 0.4s;
+}
+
+.nav-link.active {
+    background-color: #f3a2f9 !important; /* Example: A light purple color */
+    color: rgb(7, 7, 7) !important; /* Change text color if needed */
+}
+
+.tab-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #090909;
+    text-align: center;
+    transition: 0.4s;
+    min-width: 150px;
+}
+
+.skill-img {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+}
+
+.skill-container:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.skill-text {
+    font-size: 1.2rem;
+    margin-top: -2px;
+    font-weight: bold;
 }
 
 /* Projects Section */
@@ -217,72 +275,9 @@ header {
     transition: 0.4s;
 }
 
-
-/* Skills Section */
-.skills-header {
-    padding-bottom: 1%;
-    padding-top: 5%;
-}
-
-.nav-link{
-    font-family: "Indie Flower", cursive;
-    color: white;
-    font-size: 1.6rem;
-    font-weight: 400;
-}
-
-.nav-link:hover {
-    color: #f3a2f9;
-    transition: 0.4s;
-}
-
-.nav-link.active {
-    background-color: #f3a2f9 !important; /* Example: A light purple color */
-    color: rgb(7, 7, 7) !important; /* Change text color if needed */
-}
-
-.tab-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1%;
-}
-
-.skill-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    color: #090909;
-    text-align: center;
-    transition: 0.4s;
-    min-width: 150px;
-}
-
-.skill-img {
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-}
-
-.skill-container:hover {
-    transform: scale(1.1);
-    transition: 0.4s;
-}
-
-.skill-text {
-    font-size: 1.2rem;
-    margin-top: -2px;
-    font-weight: bold;
-}
-
 /* Break Line Between Sections */
-/* .break-line, .about-break-line, .projects-break-line {
-    height: 7px; 
+.break-line, .about-break-line, .projects-break-line {
+    height: 6px; 
     background-color: #faf9fa; 
     width: 100%; 
     margin: 0 auto; 
@@ -291,10 +286,35 @@ header {
     opacity: 0.7; 
 }
 
-.about-break-line {
-    margin-top: 65px;
-    margin-bottom: 2px;
-} */
+/* About Me Full Container */
+#about-em-container {
+    padding-top: 30px;
+}
+
+/* about me img */
+.about-img {
+    border-radius: 50%;
+    min-width: 170px;
+    
+}
+
+/* About Me Text */
+.about-text-container {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 6.2%;
+    text-shadow: 1px 1px 1px rgb(7, 7, 7);
+    max-height: 55%;
+}
+
+.about-title{
+    font-family: "Indie Flower", cursive;
+    font-size: 2.5rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    /* text-decoration: underline; */
+    padding-bottom: 10px;
+}
 
 /* Contacts Section */
 
