@@ -133,13 +133,17 @@ header {
     padding-bottom: 2%;
 }
 
+.project-header{
+    padding-top: 2%;
+
+}
 /* Individual project titles */
 .project-title {
     font-family: "Indie Flower", cursive;
     font-size: 2rem;
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: center;
 }
 
@@ -263,20 +267,20 @@ header {
     font-weight: bold;
 }
 /* Break Line Between Sections */
-.break-line, .about-break-line, .projects-break-line {
-    height: 3px; /* Thickness of the line */
-    background-color: #faf9fa; /* Color of the line */
-    width: 100%; /* Full width of its container */
-    margin: 0 auto; /* Center the line horizontally */
+/* .break-line, .about-break-line, .projects-break-line {
+    height: 7px; 
+    background-color: #faf9fa; 
+    width: 100%; 
+    margin: 0 auto; 
     margin-top: 90px;
     margin-bottom: 30px; 
-    opacity: 0.7; /* Opacity of the line */
+    opacity: 0.7; 
 }
 
 .about-break-line {
     margin-top: 65px;
     margin-bottom: 2px;
-}
+} */
 
 /* Contacts Section */
 .contact-header {
