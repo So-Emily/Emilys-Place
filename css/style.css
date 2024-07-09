@@ -268,7 +268,7 @@ header {
 }
 /* Break Line Between Sections */
 .break-line, .about-break-line, .projects-break-line {
-    height: 3px; /* Thickness of the line */
+    height: 7px; /* Thickness of the line */
     background-color: #faf9fa; /* Color of the line */
     width: 100%; /* Full width of its container */
     margin: 0 auto; /* Center the line horizontally */
