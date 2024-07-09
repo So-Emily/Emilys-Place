@@ -28,9 +28,20 @@
 
 </head>
 <body> 
+    <!-- Contacts Fixed to Screen -->
+    <div class="contact-icons bottom-0">
+        <a href="https://github.com/So-Emily" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/emily-soriano-171a4313a/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.twitch.tv/spooki_em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitch"><i class="fab fa-twitch"></i></a>
+        <a href="https://www.instagram.com/spooki_em/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/Spooki_Em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://discord.gg/6wE6Cgffp2" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Boo Land Discord Server"><i class="fab fa-discord"></i></a>
+        <a href="https://steamcommunity.com/id/Spooki_Em/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Steam"><i class="fab fa-steam"></i></a>
+    </div>
+
     <header>
         <div class="image-text-container">
-            <img src="assets/images/pixel-purple.gif" class="img-fluid header-img" alt="Header image - bioshock rapture city line with Emily's Place on top">
+            <img src="assets/images/pixel-purple.gif" class="img-fluid header-img" alt="Purple Pixel Lake Rippling under the sun 💜">
 
             <!-- Image Text Title -->
             <div class="centered-text indie-flower-header text-light">Emily's Place</div>
@@ -49,29 +60,24 @@
                         <a class="nav-link indie-flower-nav  link-offset-3" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link indie-flower-nav  link-offset-3" href="#about-em-container">About Em</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link indie-flower-nav  link-offset-3" href="#contact-em">Contact Em</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <!-- Contacts Following Header -->
-        <div class="contact-icons justify-content-center">
-            
-            <a href="https://steamcommunity.com/id/Spooki_Em/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Steam"><i class="fab fa-steam"></i></a>
-            
-            <a href="https://www.twitch.tv/spooki_em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitch"><i class="fab fa-twitch"></i></a>
-            
-            <a href="https://www.linkedin.com/in/emily-soriano-171a4313a/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            
-            <a href="https://github.com/So-Emily" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub"><i class="fab fa-github"></i></a>
-            
-            <a href="https://www.instagram.com/spooki_em/" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"><i class="fab fa-instagram"></i></a>
-            
-            <a href="https://discord.gg/6wE6Cgffp2" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Boo Land Discord Server"><i class="fab fa-discord"></i></a>
-            
-            <a href="https://twitter.com/Spooki_Em" target="_blank" class="contact-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i class="fab fa-twitter"></i></a>
-        </div>
+
+        <section class="container-fluid head-title-text">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <h1 class="header-welcome text-light link-offset-1">Welcome!</h1>
+                    <p class="text-light link-offset-1">This is a place I have created to showcase my coding projects and share my journey in web development.</p>
+                </div>
+            </div>
+        </section>
     </header>
 
     <!-- Back to top button -->
@@ -79,31 +85,8 @@
         <img class="btn to-top-btn" src="assets/images/to-top-icon.png" alt="Go to top">
     </button>
 
-    <!-- About Me Starts w/ Img -->
-    <section class="container-fluid" id="about-em-container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-2 offset-1 about-img-container">
-                <img src="assets/images/emily.jpg" class="img-fluid about-img" alt="Emily's profile picture">
-            </div>
-            <div class="col-12 col-md-6 about-text-container text-light">
-                <h2 class="indie-flower-header about-title link-offset-1">About Em</h2>
-                <p class="source-code-pro-text about-body">
-                    Hello there! My name is Emily Soriano.<br>
-                    
-                    I am born and raised in Seattle, but I live in California at the moment.<br>
-
-                    Currently, I am studying coding and web development with UC Berkeley Extension's Coding Bootcamp.<br>
-
-                    I want to become a full stack developer and work on projects that I am passionate about.<br>
-
-                    Beside my passions for video games, roller skating and my dog, Cleo.
-                </p>
-            </div>
-        </div>
-    </section>
-
     <!-- Line inbetween sections -->
-    <div class="about-break-line"></div>
+    <!-- <div class="about-break-line"></div> -->
 
     <!-- Skills - Tech Stack Section -->
     <section id="skills">
@@ -201,7 +184,6 @@
                                 <p class="source-code-pro-text skill-text">Photoshop</p>
                             </div>
                         </div>
-                        
                     </div>    
                 </div>
             </div>
@@ -263,15 +245,58 @@
                 <div class="project-text-container text-light">
                     
                     <p class="source-code-pro-text project-body">
-                        A basic task board using jQuery. A simple way to keep track of tasks.<br> 
+                        A basic task board using jQuery. A 
+                        way to keep track of tasks.<br> 
                         Color coded for priority.
                     </p>
                     <a href="https://github.com/So-Emily/jQuery-Task-Board" target="_blank" class="btn btn-outline-info project-button">View Project GitHub</a>
-        </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="col-12 col-md-5 project-container">
+                <div class="project-title-container">
+                    <a href="https://so-emily.github.io/Payroll-Tracker/" target="_blank" class="link-offset-3 project-title-link">
+                        <h3 class="project-title">Base Payroll Tracker</h3>
+                    </a>
+                </div>
+                <div class="project-img-container">
+                    <img src="assets/images/project-imgs/payroll-img.PNG" class="img-fluid project-img" alt="A basic task board using jquery and mute colors">
+                </div>
+                <div class="project-text-container text-light">
+                    
+                    <p class="source-code-pro-text project-body">
+                        A basic website payroll tracker. It allows you to add employees and generate overall salary inforation. Plus a random raffle.
+                    </p>
+                    <a href="https://github.com/So-Emily/Payroll-Tracker" target="_blank" class="btn btn-outline-info project-button">View Project GitHub</a>
+                </div>
+            </div>
     </section>
 
     <!-- Line inbetween sections -->
-    <div class="break-line"></div>
+        <div class="break-line"></div>
+
+    <!-- About Me Starts w/ Img -->
+    <section class="container-fluid" id="about-em-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-2 offset-1 about-img-container">
+                <img src="assets/images/emily.jpg" class="img-fluid about-img" alt="Emily's profile picture">
+            </div>
+            <div class="col-12 col-md-6 about-text-container text-light">
+                <h2 class="indie-flower-header about-title link-offset-1">About Em</h2>
+                <p class="source-code-pro-text about-body">
+                    Hello there! My name is Emily Soriano.<br>
+                    
+                    I am born and raised in Seattle, but I live in California at the moment.<br>
+
+                    Currently, I am studying coding and web development with UC Berkeley Extension's Coding Bootcamp.<br>
+
+                    I want to become a full stack developer and work on projects that I am passionate about.<br>
+
+                    Beside my passions for video games, roller skating and my dog, Cleo.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <!-- <section id="contact-em">
