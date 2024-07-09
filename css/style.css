@@ -38,6 +38,7 @@ header {
 .contact-icons a {
     color: #fbfcfc; /* Icon color */
     margin: 0 20px; /* Spacing between icons */
+    text-shadow: 1.5px 1.5px 1.5px rgb(7, 7, 7);
 }
 
 .contact-icons a:hover {
@@ -156,6 +157,7 @@ header {
     color: white;
     font-size: 1.6rem;
     font-weight: 400;
+    text-shadow: 1px 1px 1px rgb(7, 7, 7);
 }
 
 .nav-link:hover {
@@ -166,6 +168,7 @@ header {
 .nav-link.active {
     background-color: #f3a2f9 !important; /* Example: A light purple color */
     color: rgb(7, 7, 7) !important; /* Change text color if needed */
+    text-shadow: 0px 0px 0px rgb(7, 7, 7);
 }
 
 .tab-content {
@@ -188,6 +191,11 @@ header {
     text-align: center;
     transition: 0.4s;
     min-width: 150px;
+}
+
+.skill-container > * { /* Targeting all direct children of .skill-container */
+    flex-shrink: 0; /* Prevents the items from shrinking */
+    min-width: 100px; /* Adjust this value based on the minimum width needed for your items */
 }
 
 .skill-img {
@@ -351,6 +359,31 @@ header {
         text-align: center;
     }
 
+    .tab-pane {
+        display: flex;
+        flex-direction: column; /* Change to column to stack children vertically */
+        justify-content: center;
+        align-items: center;
+        min-width: 50%;
+    }
+
+    /* Assuming .icon-container is the class wrapping your icons */
+    .tab-pane .icon-container {
+        /* Adjust height as needed */
+        height: auto; /* Example to make height adjust based on content */
+        display: flex; /* Ensure flex layout for icons */
+        justify-content: center; /* Center icons horizontally */
+        align-items: center; /* Center icons vertically */
+        flex-wrap: wrap; /* Allow icons to wrap */
+    }
+
+    /* Directly target icons if they have a specific class or are img elements */
+    .tab-pane .icon-container img {
+        /* Example to adjust icon size */
+        width: 50px; /* Adjust based on desired size */
+        height: auto; /* Maintain aspect ratio */
+        margin: 5px; /* Add some space around icons */
+    }
 }
 
 
