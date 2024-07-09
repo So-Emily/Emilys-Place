@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    padding-top: 50px;
+    padding-top: 0px;
 }
 
 /* Back to the top button CSS */
@@ -24,14 +24,14 @@ header {
 }
 
 .contact-icons {
+    display: flex;
+    flex-direction: column;    
     position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;        
+    z-index: 1000;   
     font-size: 30px; 
-    padding-top: 2.5px;
-    background-color: #755b84;
+    gap: 20px;
+    padding-bottom: 1%
+    /* background-color: #755b84; */
 }
 
 .contact-icons a {
@@ -46,7 +46,7 @@ header {
 
 .header-img {
     width: 100%;
-    max-height: 280px;
+    max-height: 300px;
 }
 
 /* Header Image CSS */
@@ -58,7 +58,7 @@ header {
 .centered-text {
     font-family: "Indie Flower", cursive;
     position: absolute;
-    top: 38%; /* Center vertically */
+    top: 45%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust to perfectly center */
     color: white; /* Example text color */
@@ -81,6 +81,31 @@ header {
 .indie-flower-nav:hover {
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
+}
+
+/* Title Styles */
+.projects-header, .skills-header, .contact-header, .header-welcome {
+    font-family: "Indie Flower", cursive;
+    display: flex;
+    font-size: 2.6rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+
+.header-welcome {
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+.head-title-text p {
+    justify-content: center;
+    text-align: center;
+    padding-top: -12px;
+    padding-bottom: 1%;
+    text-shadow: 1px 1px 1px rgb(7, 7, 7);
 }
 
 /* Body Begins */
@@ -119,18 +144,6 @@ header {
     padding-bottom: 3%;
     justify-content: center;
     align-items: center;
-}
-
-/* Project main title */
-.projects-header, .skills-header, .contact-header {
-    font-family: "Indie Flower", cursive;
-    display: flex;
-    font-size: 2.6rem;
-    color: #f7f7f7;
-    text-shadow: 2px 2px 2px rgb(7, 7, 7);
-    justify-content: center;
-    padding-top: 10%;
-    padding-bottom: 2%;
 }
 
 .project-header{
@@ -266,6 +279,7 @@ header {
     margin-top: -2px;
     font-weight: bold;
 }
+
 /* Break Line Between Sections */
 /* .break-line, .about-break-line, .projects-break-line {
     height: 7px; 
