@@ -61,11 +61,11 @@ header {
 .centered-text {
     font-family: "Indie Flower", cursive;
     position: absolute;
-    top: 45%; /* Center vertically */
+    top: 40%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust to perfectly center */
     color: white; /* Example text color */
-    font-size: 8.6vw; /* Example font size */
+    font-size: 8.2vw; /* Example font size */
     text-shadow: 2.2px 2.2px 2.2px black; /* Example text shadow */
 }
 
@@ -77,7 +77,7 @@ header {
     font-size: 1.6rem;
     padding-bottom: 4px;
     padding-top: 4px;
-    text-shadow: 1px 1px 1px rgb(7, 7, 7);
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
     transition: 0.4s;
 }
 
@@ -87,7 +87,7 @@ header {
 }
 
 .navbar-brand {
-    animation : wiggle 2s ease-in-out;
+    animation : wiggle 2s infinite;
 }
 
 /* Title Styles */
@@ -122,23 +122,33 @@ header {
 }
 
 .header-welcome {
-    padding-top: 3%;
-    padding-bottom: 1%;
-    font-size: 4rem;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
     animation: wiggle 2s ease-in-out;
 }
 
-.head-title-text p {
+.head-title-text {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+.head-title-text p {
+    font-size: 1.6rem;
     padding-bottom: 2%;
-    text-shadow: 1px 1px 1px rgb(7, 7, 7);
+    max-width: 80%;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    margin: 0 auto; /* Center the paragraph within the flex container */
 }
 
 /* Body Begins */
 /* Skills Section */
 .skills-header {
     padding-bottom: 1%;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .nav-link{
@@ -208,6 +218,16 @@ header {
     padding-top: 2%;
 
 }
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5%;
+
+}
+
 /* Individual project titles */
 .project-title {
     font-family: "Indie Flower", cursive;
@@ -288,7 +308,7 @@ header {
 
 /* About Me Full Container */
 #about-em-container {
-    padding-top: 30px;
+    padding-top: 4.5%;
 }
 
 /* about me img */
@@ -317,7 +337,6 @@ header {
 }
 
 /* Contacts Section */
-
 #contact-em {
     padding-top: 1%;
 }
