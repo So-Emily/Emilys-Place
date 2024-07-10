@@ -95,7 +95,7 @@ header {
 .projects-header, .skills-header, .contact-header, .header-welcome {
     font-family: "Indie Flower", cursive;
     display: flex;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
     justify-content: center;
@@ -148,7 +148,7 @@ header {
 /* Body Begins */
 /* Skills Section */
 .skills-header {
-    padding-bottom: 1%;
+    padding-bottom: 1.6%;
     padding-top: 10%;
 }
 
@@ -218,13 +218,14 @@ header {
 /* Projects Section */
 #projects {
     padding-bottom: 3%;
+    padding-top: 3%;
     justify-content: center;
     align-items: center;
 }
 
 .project-header{
     padding-top: 2%;
-
+    
 }
 
 .project-container {
@@ -232,7 +233,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 2.5%;
+    padding-top: 2%;
 
 }
 
@@ -311,12 +312,13 @@ header {
     margin: 0 auto; 
     margin-top: 90px;
     margin-bottom: 30px; 
-    opacity: 0.7; 
+    opacity: 0.8; 
 }
 
 /* About Me Full Container */
 #about-em-container {
     padding-top: 4.5%;
+    padding-bottom: 2.5%;
 }
 
 /* about me img */
@@ -341,7 +343,7 @@ header {
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
     /* text-decoration: underline; */
-    padding-bottom: 10px;
+    padding-bottom: 16px;
 }
 
 /* Contacts Section */
