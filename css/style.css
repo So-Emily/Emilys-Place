@@ -38,6 +38,7 @@ header {
 .contact-icons a {
     color: #fbfcfc; /* Icon color */
     margin: 0 20px; /* Spacing between icons */
+    text-shadow: 1.5px 1.5px 1.5px rgb(7, 7, 7);
 }
 
 .contact-icons a:hover {
@@ -61,11 +62,11 @@ header {
 .centered-text {
     font-family: "Indie Flower", cursive;
     position: absolute;
-    top: 45%; /* Center vertically */
+    top: 40%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust to perfectly center */
     color: white; /* Example text color */
-    font-size: 8.6vw; /* Example font size */
+    font-size: 8.2vw; /* Example font size */
     text-shadow: 2.2px 2.2px 2.2px black; /* Example text shadow */
 }
 
@@ -77,7 +78,7 @@ header {
     font-size: 1.6rem;
     padding-bottom: 4px;
     padding-top: 4px;
-    text-shadow: 1px 1px 1px rgb(7, 7, 7);
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
     transition: 0.4s;
 }
 
@@ -87,7 +88,7 @@ header {
 }
 
 .navbar-brand {
-    animation : wiggle 2s ease-in-out;
+    animation : wiggle 2s infinite;
 }
 
 /* Title Styles */
@@ -122,23 +123,33 @@ header {
 }
 
 .header-welcome {
-    padding-top: 3%;
-    padding-bottom: 1%;
-    font-size: 4rem;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
     animation: wiggle 2s ease-in-out;
 }
 
-.head-title-text p {
+.head-title-text {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+.head-title-text p {
+    font-size: 1.6rem;
     padding-bottom: 2%;
-    text-shadow: 1px 1px 1px rgb(7, 7, 7);
+    max-width: 80%;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    margin: 0 auto; /* Center the paragraph within the flex container */
 }
 
 /* Body Begins */
 /* Skills Section */
 .skills-header {
     padding-bottom: 1%;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .nav-link{
@@ -146,6 +157,7 @@ header {
     color: white;
     font-size: 1.6rem;
     font-weight: 400;
+    text-shadow: 1px 1px 1px rgb(7, 7, 7);
 }
 
 .nav-link:hover {
@@ -156,6 +168,7 @@ header {
 .nav-link.active {
     background-color: #f3a2f9 !important; /* Example: A light purple color */
     color: rgb(7, 7, 7) !important; /* Change text color if needed */
+    text-shadow: 0px 0px 0px rgb(7, 7, 7);
 }
 
 .tab-content {
@@ -178,6 +191,11 @@ header {
     text-align: center;
     transition: 0.4s;
     min-width: 150px;
+}
+
+.skill-container > * { /* Targeting all direct children of .skill-container */
+    flex-shrink: 0; /* Prevents the items from shrinking */
+    min-width: 100px; /* Adjust this value based on the minimum width needed for your items */
 }
 
 .skill-img {
@@ -208,6 +226,16 @@ header {
     padding-top: 2%;
 
 }
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5%;
+
+}
+
 /* Individual project titles */
 .project-title {
     font-family: "Indie Flower", cursive;
@@ -288,7 +316,7 @@ header {
 
 /* About Me Full Container */
 #about-em-container {
-    padding-top: 30px;
+    padding-top: 4.5%;
 }
 
 /* about me img */
@@ -317,7 +345,6 @@ header {
 }
 
 /* Contacts Section */
-
 #contact-em {
     padding-top: 1%;
 }
@@ -332,6 +359,31 @@ header {
         text-align: center;
     }
 
+    .tab-pane {
+        display: flex;
+        flex-direction: column; /* Change to column to stack children vertically */
+        justify-content: center;
+        align-items: center;
+        min-width: 50%;
+    }
+
+    /* Assuming .icon-container is the class wrapping your icons */
+    .tab-pane .icon-container {
+        /* Adjust height as needed */
+        height: auto; /* Example to make height adjust based on content */
+        display: flex; /* Ensure flex layout for icons */
+        justify-content: center; /* Center icons horizontally */
+        align-items: center; /* Center icons vertically */
+        flex-wrap: wrap; /* Allow icons to wrap */
+    }
+
+    /* Directly target icons if they have a specific class or are img elements */
+    .tab-pane .icon-container img {
+        /* Example to adjust icon size */
+        width: 50px; /* Adjust based on desired size */
+        height: auto; /* Maintain aspect ratio */
+        margin: 5px; /* Add some space around icons */
+    }
 }
 
 
