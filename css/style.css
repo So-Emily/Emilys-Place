@@ -20,6 +20,10 @@ header {
 }
 
 .to-top-btn {
+    position: fixed;
+    bottom: 20px; /* Position it at the bottom of the viewport */
+    right: 20px; /* Place it on the right side of the screen */
+    z-index: 1000;
     max-width: 70px;
 }
 
@@ -28,6 +32,7 @@ header {
     display: flex;
     flex-direction: column;    
     position: fixed;
+    top: 25%;
     z-index: 1000;   
     font-size: 30px; 
     gap: 30px;
@@ -46,6 +51,9 @@ header {
     transition: 0.4s;
 }
 
+.header-welcome{
+    font-size: 10px;
+}
 
 /* Start of header */
 .header-img {
@@ -225,7 +233,6 @@ header {
 
 .project-header{
     padding-top: 2%;
-    
 }
 
 .project-container {
@@ -316,25 +323,35 @@ header {
 }
 
 /* About Me Full Container */
+/* Assuming #about-em-container is the parent container */
 #about-em-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between text and image */
+    align-items: center; /* Centers items vertically */
     padding-top: 4.5%;
     padding-bottom: 2.5%;
 }
 
-/* about me img */
 .about-img {
     border-radius: 50%;
     min-width: 170px;
-    
+    margin-left: 20%;
+    padding-bottom: 3%;
+    box-shadow: 1px 1px 1px #090909;
+    background-color: #090909;
 }
 
-/* About Me Text */
+
+
 .about-text-container {
-    padding-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: larger;
     padding-top: 10px;
     padding-left: 6.2%;
-    text-shadow: 1px 1px 1px rgb(7, 7, 7);
-    max-height: 55%;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    min-width: 90%;
 }
 
 .about-title{
@@ -352,40 +369,122 @@ header {
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
-    .about-img {
-        display: none;
+@media (max-width: 1027px){
+    #contact-em {
+        display: none; /* Hide contact section on smaller screens */
     }
 
-    .about-text-container {
+    .about-img {
+        max-width: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* display: none;  */
+        /* Hide large images that don't fit well on small screens */
+    }
+
+    .about-img-container{
+        padding-top: 2%;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
-    .tab-pane {
+    
+}
+
+@media screen and (max-width: 768px) {
+    /* .contact-icons{
         display: flex;
-        flex-direction: column; /* Change to column to stack children vertically */
+        width:auto;
+        max-width: fit-content;
+        font-size: 30px;
+        flex-direction: row;
+        text-align: center;
+        
+    } */
+    
+    .about-img {
+        max-width: 20px;
         justify-content: center;
         align-items: center;
-        min-width: 50%;
+        text-align: center;
+        /* display: none;  */
+        /* Hide large images that don't fit well on small screens */
     }
 
-    /* Assuming .icon-container is the class wrapping your icons */
+    .about-img-container{
+        padding-top: 2%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text-container{
+        text-align: center; /* Center-align text for better readability */
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tab-pane {
+        padding: 20px 0; /* Add some padding around tab content for spacing */
+        width: 100%; /* Use full width of the screen */
+    }
+
     .tab-pane .icon-container {
-        /* Adjust height as needed */
-        height: auto; /* Example to make height adjust based on content */
-        display: flex; /* Ensure flex layout for icons */
-        justify-content: center; /* Center icons horizontally */
-        align-items: center; /* Center icons vertically */
-        flex-wrap: wrap; /* Allow icons to wrap */
+        text-align: center; /* Center-align text for better readability */
+        display: flex;
+        flex-direction: row; /* Adjust to row for horizontal alignment */
+        flex-wrap: wrap; /* Allow icons to wrap to the next line if there's not enough space */
+        justify-content: flex-start; /* Align items to the start, making them closer */
+        padding: 10px; /* Add padding for better spacing around icons */
+        align-items: center;
+        gap: 1px; /* Adjust the gap between icons */
+        margin-left: 100px;
     }
 
-    /* Directly target icons if they have a specific class or are img elements */
-    .tab-pane .icon-container img {
-        /* Example to adjust icon size */
-        width: 50px; /* Adjust based on desired size */
-        height: auto; /* Maintain aspect ratio */
-        margin: 5px; /* Add some space around icons */
+    .tab-pane .row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+        -webkit-overflow-scrolling: touch; /* For momentum scrolling on iOS devices */
+        padding-left: 100px;
     }
+
+    .tab-pane .skill-container {
+        flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+        margin-right: 10px; /* Adjusted space between items, increase if needed */
+        margin-bottom: 10px; /* Add bottom margin for when they wrap */
+    }
+
+    
+    /* Adjust font sizes for smaller screens to ensure text is not too large */
+    body, h1, h2, h3, p {
+        font-size: 90%; /* Reduce font size to 90% of the original size */
+    }
+
+    /* Improve form layout */
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 90%; /* Make form inputs take up most of the screen width */
+        margin: 10px 0; /* Add some margin for spacing between form fields */
+    }
+
+    /* Button adjustments */
+    button, .btn {
+        width: auto; /* Allow buttons to size according to their content */
+        padding: 10px 20px; /* Increase padding for better touch interaction */
+    }
+
 }
+
+
+/* 
+@media screen and (max-width: 470px) {
+
+    
+} */
 
 
