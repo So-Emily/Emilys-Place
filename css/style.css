@@ -394,15 +394,6 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    /* .contact-icons{
-        display: flex;
-        width:auto;
-        max-width: fit-content;
-        font-size: 30px;
-        flex-direction: row;
-        text-align: center;
-        
-    } */
     
     .about-img {
         max-width: 20px;
