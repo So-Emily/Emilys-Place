@@ -96,7 +96,7 @@ header {
 }
 
 .navbar-brand {
-    animation : wiggle 2s infinite;
+    animation : wiggle 5s ease-in-out infinite;
 }
 
 /* Title Styles */
@@ -107,25 +107,23 @@ header {
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
     justify-content: center;
-    padding-top: 10%;
-    padding-bottom: 2%;
+    margin-bottom: 3%;
+    
 }
+
 
 /* Creating a text effect - text wiggle or swing */
 @keyframes wiggle {
-    0% {
+    0%, 100% {
         transform: rotate(0deg);
     }
     25% {
-        transform: rotate(5deg);
-    }
-    50% {
         transform: rotate(-5deg);
     }
-    75% {
+    50% {
         transform: rotate(5deg);
     }
-    100% {
+    75% {
         transform: rotate(-5deg);
     }
 }
@@ -135,7 +133,7 @@ header {
     padding-bottom: 2%;
     font-size: 5rem;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
-    animation: wiggle 2s ease-in-out;
+    animation: wiggle 5s ease-in-out infinite;
 }
 
 .head-title-text {
@@ -151,6 +149,17 @@ header {
     max-width: 80%;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
     margin: 0 auto; /* Center the paragraph within the flex container */
+}
+
+/* Welcome Section */
+.welcome-text {
+    font-family: "Indie Flower", cursive;
+    font-size: 2.5rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-align: center;
 }
 
 /* Body Begins */
@@ -243,80 +252,59 @@ header {
     margin-right: auto; /* Adjusted for responsiveness */
 }
 
+
 /* Projects Section */
-#projects {
-    padding-bottom: 3%;
-    padding-top: 3%;
-    justify-content: center;
-    align-items: center;
+#projects-main-title {
+    font-family: "Indie Flower", cursive;
+    font-size: 2.8rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    padding-top: 10%;
 }
 
-.project-header{
-    padding-top: 2%;
+#projects-main-title:hover, .projects-header:hover {
+    color: #f3a2f9;
+    transition: 0.4s;
 }
 
-.project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2%;
-
-}
-
-/* Individual project titles */
-.project-title {
+/* .Project Individual Title Link */
+.project-title, .project-title-link {
     font-family: "Indie Flower", cursive;
     font-size: 2rem;
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
-    padding-top: 15px;
+    padding-top: 10%;
+    padding-bottom: 2%;
     text-align: center;
+    text-decoration-color: #f7f7f7;
 }
 
-/* Line underneath the project titles */
-.project-title-link {
-    color: #f7f7f7;
-    text-shadow: 2px 2px 2px rgb(7, 7, 7);
-}
-
-.project-title-link:hover {
-    color: #f3a2f9fa;
-    text-shadow: 0px 0px 0px rgb(106, 15, 111);
+.project-title:hover, .projects-header:hover {
+    color: #f3a2f9;
     transition: 0.4s;
 }
 
-/* Project Image */
-.project-img {
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
-}
-
-/* Project Description */
+/* under project text */
 .project-body {
-    padding-top: 10px;
-    text-shadow: 1px 1px 1px rgb(7, 7, 7);
-    align-items: center;
-    justify-content: center;
+    font-size: 1.2rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    padding-top: 2%;
+    padding-bottom: 2%;
     text-align: center;
-    font-size: 1rem;
 }
 
-.project-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.project-links-container{
+/* projects live and github links container */
+.project-links-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
-    gap: 10px;
+    /* padding-top: 2%;
+    padding-bottom: 2%; */
+}
+
+.project-links-container a {
+    margin: 0 20px;
 }
 
 /* Project Button */
@@ -354,6 +342,7 @@ header {
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
     border: 1px solid #f7f7f7;
+    text-align: center;
     padding: 10px 20px;
     transition: 0.4s;
     text-decoration: none;
