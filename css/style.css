@@ -309,9 +309,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* padding-top: 2%;
-    padding-bottom: 2%; */
 }
 
 .project-links-container a {
@@ -527,6 +524,14 @@ header {
         padding-top: 15%;
     }
     
+    .projects-body-container{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap
+        
+    }
+
     .project-button {
         padding: 5px 10px;
         font-size: 1.5rem;
