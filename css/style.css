@@ -342,6 +342,34 @@ header {
     transition: 0.4s;
 }
 
+.git-stack-link{
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    text-align: center;
+    padding-top: 5%;
+    font-size: 1.2rem;
+}
+
+.git-stack-link a {
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    border: 1px solid #f7f7f7;
+    padding: 10px 20px;
+    transition: 0.4s;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.git-stack-link a:hover {
+    background-color: #f3a2f9;
+    color: #090909 !important;
+    border-color: #090909;
+    text-shadow: 0px 0px 0px rgb(106, 15, 111);
+    transition: 0.4s;
+}
+
+
+
 /* Break Line Between Sections */
 .break-line, .about-break-line, .projects-break-line {
     height: 6px; 
@@ -379,7 +407,6 @@ header {
     padding-bottom: 50px;
     font-size: larger;
     padding-top: 10px;
-    padding-left: 6.2%;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
     min-width: 90%;
 }
@@ -515,6 +542,17 @@ header {
 
     .project-title {
         padding-top: 20%;
+    }
+
+    .git-stack-link {
+        padding-top: 15%;
+        margin-bottom: 2px;
+    }
+
+    .git-stack-link a {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        background-color: #f3a2f9;
     }
 
 }
