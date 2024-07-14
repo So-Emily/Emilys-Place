@@ -223,6 +223,26 @@ header {
     font-weight: bold;
 }
 
+.tab-pane {
+    padding: 20px 0;
+    width: 100vw; /* Ensure the width does not exceed the viewport */
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tab-pane .icon-container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Adjust to center for better alignment on all screen sizes */
+    padding: 10px;
+    align-items: center;
+    gap: 1px;
+    margin-left: auto; /* Adjusted for responsiveness */
+    margin-right: auto; /* Adjusted for responsiveness */
+}
+
 /* Projects Section */
 #projects {
     padding-bottom: 3%;
@@ -277,8 +297,11 @@ header {
 /* Project Description */
 .project-body {
     padding-top: 10px;
-    
     text-shadow: 1px 1px 1px rgb(7, 7, 7);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .project-text-container {
@@ -288,13 +311,21 @@ header {
     justify-content: center;
 }
 
+.project-links-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+}
+
 /* Project Button */
 .project-button {
     display: block;
     margin: 0 auto;
     width: fit-content;
     font-family: "Indie Flower", cursive;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
     border-color: black;
@@ -304,9 +335,9 @@ header {
 }
 
 .project-button:hover {
-    background-color: #f3a2f9;
+    /* background-color: #f3a2f9; */
     color: #090909;
-    border-color: #090909;
+    /* border-color: #090909; */
     text-shadow: 0px 0px 0px rgb(106, 15, 111);
     transition: 0.4s;
 }
@@ -326,22 +357,21 @@ header {
 /* Assuming #about-em-container is the parent container */
 #about-em-container {
     display: flex;
-    justify-content: space-between; /* Adjusts spacing between text and image */
+    justify-content: center; /* Adjusts spacing between text and image */
     align-items: center; /* Centers items vertically */
     padding-top: 4.5%;
     padding-bottom: 2.5%;
+    
 }
 
 .about-img {
     border-radius: 50%;
     min-width: 170px;
-    margin-left: 20%;
+    /* margin-left: 20%; */
     padding-bottom: 3%;
-    box-shadow: 1px 1px 1px #090909;
+    box-shadow: 5px 0px 5px #090909;
     background-color: #090909;
-}
-
-
+} 
 
 .about-text-container {
     justify-content: center;
@@ -352,6 +382,13 @@ header {
     padding-left: 6.2%;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
     min-width: 90%;
+}
+
+.about-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
 }
 
 .about-title{
@@ -388,9 +425,8 @@ header {
         justify-content: center;
         align-items: center;
         text-align: center;
+        
     }
-
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -418,34 +454,24 @@ header {
         align-items: center;
     }
 
+    /* The pane for skill icons */
     .tab-pane {
         padding: 20px 0; /* Add some padding around tab content for spacing */
         width: 100%; /* Use full width of the screen */
     }
 
     .tab-pane .icon-container {
-        text-align: center; /* Center-align text for better readability */
-        display: flex;
-        flex-direction: row; /* Adjust to row for horizontal alignment */
-        flex-wrap: wrap; /* Allow icons to wrap to the next line if there's not enough space */
-        justify-content: flex-start; /* Align items to the start, making them closer */
-        padding: 10px; /* Add padding for better spacing around icons */
-        align-items: center;
-        gap: 1px; /* Adjust the gap between icons */
-        margin-left: 100px;
+        margin-left: 10px; /* Reduced margin for smaller screens */
+        margin-right: 10px; /* Ensures content is not pushed too far on small screens */
     }
 
     .tab-pane .row {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto; /* Allow horizontal scrolling if needed */
-        -webkit-overflow-scrolling: touch; /* For momentum scrolling on iOS devices */
-        padding-left: 100px;
+        padding-left: 10px; /* Adjust padding for smaller screens */
     }
 
     .tab-pane .skill-container {
         flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
-        margin-right: 10px; /* Adjusted space between items, increase if needed */
+        margin-right: 1px; /* Adjusted space between items, increase if needed */
         margin-bottom: 10px; /* Add bottom margin for when they wrap */
     }
 
@@ -467,6 +493,28 @@ header {
     button, .btn {
         width: auto; /* Allow buttons to size according to their content */
         padding: 10px 20px; /* Increase padding for better touch interaction */
+    }
+
+    #skills {
+        padding-top: 15%;
+    }
+    
+    .project-button {
+        padding: 5px 10px;
+        font-size: 1.5rem;
+    }
+
+    .project-body {
+        font-size: 1rem;
+    }
+
+    .project-button:hover {
+        color: #f3a2f9;
+        text-shadow: 1px 1px 1px rgb(7, 7, 7);
+    }
+
+    .project-title {
+        padding-top: 20%;
     }
 
 }
