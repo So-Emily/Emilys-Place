@@ -267,6 +267,16 @@ header {
     transition: 0.4s;
 }
 
+/* container for all projects below header */
+.projects-body-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
 /* .Project Individual Title Link */
 .project-title, .project-title-link {
     font-family: "Indie Flower", cursive;
@@ -299,12 +309,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
     /* padding-top: 2%;
     padding-bottom: 2%; */
 }
 
 .project-links-container a {
     margin: 0 20px;
+    text-align: center;
 }
 
 /* Project Button */
