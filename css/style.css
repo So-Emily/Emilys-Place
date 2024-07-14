@@ -107,9 +107,10 @@ header {
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
     justify-content: center;
-    padding-top: 10%;
-    padding-bottom: 2%;
+    margin-bottom: 3%;
+    
 }
+
 
 /* Creating a text effect - text wiggle or swing */
 @keyframes wiggle {
@@ -253,110 +254,36 @@ header {
 
 
 /* Projects Section */
-#projects {
-    padding-bottom: 3%;
-    padding-top: 3%;
-    justify-content: center;
-    align-items: center;
+#projects-main-title {
+    font-family: "Indie Flower", cursive;
+    font-size: 2.8rem;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 2px rgb(7, 7, 7);
+    padding-top: 10%;
 }
 
-.project-header{
-    padding-top: 2%;
+#projects-main-title:hover, .projects-header:hover {
+    color: #f3a2f9;
+    transition: 0.4s;
 }
 
-
-.project-body-container {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 10px;
-    padding-left: 2%;
-    /* gap: 20%; */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* width: auto; */
-
-}
-
-.project-container {
-    display: flex;
-    width: 300px;
-    max-height: 200px;
-    margin: 120px;
-    padding-top: 5%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    /* flex: 0 0 auto;  */
-    /* Prevent flex items from growing or shrinking */
-}
-
-.project-container img {
-    width: 100%;
-    height: auto; /* Example fixed height */
-    object-fit: cover; /* Ensures images cover the area without distortion */
-    border-radius: 10px;
-}
-
-/* Individual project titles */
-.project-title {
-    display: flex;
+/* .Project Individual Title Link */
+.project-title, .project-title-link {
     font-family: "Indie Flower", cursive;
     font-size: 2rem;
     color: #f7f7f7;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
-    padding-top: 15px;
+    padding-top: 10%;
+    padding-bottom: 2%;
     text-align: center;
+    text-decoration-color: #f7f7f7;
 }
 
-/* Line underneath the project titles */
-.project-title-link {
-    color: #f7f7f7;
-    text-shadow: 2px 2px 2px rgb(7, 7, 7);
-}
-
-.project-title-link:hover {
-    color: #f3a2f9fa;
-    text-shadow: 0px 0px 0px rgb(106, 15, 111);
+.project-title:hover, .projects-header:hover {
+    color: #f3a2f9;
     transition: 0.4s;
 }
 
-/* Project Image */
-.project-img {
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
-}
-
-/* Project Description */
-.project-body {
-    padding-top: 10px;
-    text-shadow: 1px 1px 1px rgb(7, 7, 7);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.project-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.project-links-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    gap: 10px;
-}
 
 /* Project Button */
 .project-button {
