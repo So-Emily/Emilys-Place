@@ -37,7 +37,6 @@ header {
     font-size: 30px; 
     gap: 30px;
     padding-bottom: 1%
-    /* background-color: #755b84; */
 }
 
 .contact-icons a {
@@ -455,7 +454,7 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    
+
     .about-img {
         max-width: 20px;
         justify-content: center;
@@ -523,13 +522,31 @@ header {
     #skills {
         padding-top: 15%;
     }
+
+    .project-container {
+        padding-bottom: 10%;
+    }
     
     .projects-body-container{
         display: flex;
         flex-direction: row;
         overflow-x: auto;
-        flex-wrap: nowrap
+        flex-wrap: nowrap   
+    }
+
+    .projects-body-container::-webkit-scrollbar {
+        height: 11px;
+    }
+
+    .projects-body-container::-webkit-scrollbar-thumb {
+        background-color: #f3a2f9;
+        border-radius: 10px;
         
+
+    }
+
+    .projects-body-container::-webkit-scrollbar-track {
+        background-color: #755b84;
     }
 
     .project-button {
@@ -551,8 +568,8 @@ header {
     }
 
     .git-stack-link {
-        padding-top: 15%;
-        margin-bottom: 2px;
+        padding-top: 20%;
+    
     }
 
     .git-stack-link a {
