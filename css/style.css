@@ -63,6 +63,7 @@ header {
 /* Header Image CSS */
 .image-text-container {
     position: relative;
+    margin-top: .7%;
 }
 
 /* Header Img Text */
