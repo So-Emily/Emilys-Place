@@ -52,6 +52,7 @@ header {
 
 .header-welcome{
     font-size: 10px;
+    padding-top: 0px;
 }
 
 /* Start of header */
@@ -63,6 +64,7 @@ header {
 /* Header Image CSS */
 .image-text-container {
     position: relative;
+    margin-top: .7%;
 }
 
 /* Header Img Text */
@@ -128,8 +130,8 @@ header {
 }
 
 .header-welcome {
-    padding-top: 5%;
-    padding-bottom: 2%;
+    padding-top: 4.5%;
+    padding-bottom: 0;
     font-size: 5rem;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
     animation: wiggle 5s ease-in-out infinite;
@@ -144,6 +146,7 @@ header {
 
 .head-title-text p {
     font-size: 1.6rem;
+    padding-top: 25px;
     padding-bottom: 2%;
     max-width: 80%;
     text-shadow: 2px 2px 2px rgb(7, 7, 7);
