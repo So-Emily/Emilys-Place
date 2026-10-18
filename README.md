@@ -2,7 +2,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-This is the offical Web Emily Portfolio
+This is the official Web Emily Portfolio
 
 ## Table of Contents
 - [deploying](#Deployment)
