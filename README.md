@@ -1,8 +1,8 @@
-# Em's Portfolio
+# Emily Soriano's Portfolio
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-This is the offical Web Em Portfolio
+This is the offical Web Emily Portfolio
 
 ## Table of Contents
 - [deploying](#Deployment)
